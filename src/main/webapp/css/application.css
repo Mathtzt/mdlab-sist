@@ -1,0 +1,173 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+th {
+    padding: 10px !important;
+    width: 7rem;
+}
+
+select {
+    cursor: pointer;
+}
+
+th#th-patient {
+    width: 10rem !important;
+}
+
+div#recordList_filter.dataTables_filter,
+div.dataTables_wrapper .dataTables_paginate{
+    display: none !important;
+}
+
+td a:hover {
+    color: #23cfe9;
+    text-decoration: underline;
+}
+
+a.breadcrumb-link {
+    color: #23cfe9;
+}
+a.breadcrumb-link:hover {
+    color: #23cfe9;
+    text-decoration: underline;
+}
+
+table.dataTable.dataTable tbody tr:hover {
+    background-color: #CCFFCC;
+}
+table.dataTable.dataTable tbody tr:hover > .sorting_1 {
+    background-color: #CCFFCC;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: #ffffff;
+    color: #47748b;
+    transition: all 0.3s;
+    border-right: #dedede solid;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 30px;
+}
+
+#sidebar .sidebar-footer {
+    position: fixed;
+    bottom: 0;
+    margin: 40px 50px;
+}
+
+.base-color {
+    color: #23cfe9;
+}
+
+.prepend-bg {
+    background-color: #6c757d;
+
+}
+.prepend-img {
+    color: #ffffff;
+    padding: 0 3px;
+}
+.btn-search {
+    color: #23cfe9;
+    border-color: #23cfe9;
+}
+
+.btn-search:hover {
+    color: #fff;
+    background-color: #23cfe9;
+    border-color: #23cfe9;
+}
+
+.welcome {
+    margin-top: 1.0rem;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.button-logoff {
+    padding: 0 30px;
+    margin: auto;
+    display: grid;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.container {
+    padding: 40px 50px;
+    min-height: 100vh;
+}
+
+.display {
+    font-size: 13px;
+    border: gainsboro solid thin;
+}
+
+.tbl-width {
+    width: 100%;
+}
+
+.custom-select {
+    background: none !important;
+}
+
+.breadcrumb {
+    padding: 0;
+    font-size: 13px;
+    background-color: transparent;
+}
+
+.page-link { border-radius: .25rem; }
+.page-link:hover {
+    background-color: #2b2b2b;
+    border-radius: .25rem;
+    border: none;
+}
+
+.btn-return {
+    width: 6rem;
+}
+
+/*-*/
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 578px) {
+    #id-datepicker {
+        padding-left: 0;
+    }
+
+    .row {
+        display: inline-table;
+        -ms-flex-wrap: wrap;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+}
+
+@media (max-height: 280px) {
+.sidebar-footer {
+    display: none;
+}
+}
